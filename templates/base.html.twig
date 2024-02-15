@@ -4,29 +4,45 @@
         <meta charset="UTF-8">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
         <title>{% block title %}Welcome!{% endblock %}</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
         <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text><text y=%221.3em%22 x=%220.2em%22 font-size=%2276%22 fill=%22%23fff%22>sf</text></svg>">
         {% block stylesheets %}
         {% endblock %}
         {% block header %}
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <div class="container">
-                    <a class="navbar-brand ml-5" href="#">Your Logo</a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav mx-auto">
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">About</a>
-                            </li>
-                            <!-- Add more menu items as needed -->
-                        </ul>
-                    </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <nav class="navbar navbar-expand-lg">
+                        <div class="container">
+                            <a class="navbar-brand" href="#">C&C</a>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarNav">
+                                <ul class="navbar-nav mx-auto">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Men</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Women</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Kids</a>
+                                    </li>
+                                    <!-- Add more menu items as needed -->
+                                </ul>
+                            </div>
+                            <div class="d-flex">
+                                <!-- Icon or additional content on the right -->
+                                <i class="bi bi-envelope" style="margin-right: 10px"></i><!-- Example: Font Awesome icon -->
+                                <br> <!-- Add a space between the icons -->
+                                <i class="bi bi-cart mr-4"></i>
+                                <br>
+                                <i class="bi bi-person" style="margin-left: 10px"></i>
+                            </div>
+                        </div>
+                    </nav>
                 </div>
-            </nav>
+            </div>
 
 
         {% endblock %}
