@@ -1,8 +1,126 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello GuestController!{% endblock %}
-
+{% block title %}Home{% endblock %}
 {% block body %}
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 mt-5">
+                <h1>Creativity Collective</h1>
+                <p class="mb-3 border-bottom pb-3">Welcome to Creativity Collective, where fashion meets individuality. We believe that clothing is more than just fabric stitched together; it's a form of expression, a canvas to showcase your unique personality. At Creativity Collective, we curate a diverse collection that seamlessly blends trendsetting styles with timeless classics. From casual wear that exudes comfort to elegant pieces that make a statement, our clothing is designed to empower and inspire. Join us on a journey where every stitch tells a story, and every outfit becomes a reflection of your distinct taste. Embrace the fusion of fashion and identity with Creativity Collective – because your style is a story waiting to be told.</p>
+                <button type="button" class="btn olive-button">Register</button>
+                <button type="button" class="btn btn-secondary btn-round custom-outline">Login</button>
+            </div>
+
+            <div class="col-md-6 mt-5">
+                <div class="container">
+                    <img src="{{ asset("img/clothes.webp") }}" alt="Beschrijvende tekst van de afbeelding" class="img-fluid ">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card-divider mt-5"></div>
+
+    <div class="container">
+
+        <h1 class="text-center mt-4">Shop By category</h1>
+
+        <div class="row">
+            <!-- ... rest of your content ... -->
+            <div class="col-md-4 mb-4 ">
+                <a href="{{ path('cotton_page') }}" class="circular-card">
+                    <div class="image-container">
+                        <img src="{{ asset("img/cotton.webp") }}" alt="Cotton Image" class="img-fluid">
+                    </div>
+                </a>
+                <div class="card-body text-center">
+                    <h1 class="card-title">Cotton</h1>
+                    <p class="card-text">Information about cotton material.</p>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <a href="{{ path('cotton_page') }}" class="circular-card">
+                    <div class="image-container">
+                        <img src="{{ asset("img/bio.jpeg") }}" alt="Biological Cotton Image" class="img-fluid">
+                    </div>
+                </a>
+                <div class="card-body text-center">
+                    <h1 class="card-title">Biological</h1>
+                    <p class="card-text">Information about biological cotton material.</p>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <a href="{{ path('wool_page') }}" class="circular-card">
+                    <div class="image-container">
+                        <img src="{{ asset("img/wool.jpeg") }}" alt="Wool Image" class="img-fluid ">
+                    </div>
+                </a>
+                <div class="card-body text-center">
+                    <h1 class="card-title">Wool</h1>
+                    <p class="card-text">Information about wool material.</p>
+                </div>
+            </div>
+            <!-- ... rest of your content ... -->
+        </div>
+    </div>
+
+    <div class="card-divider mt-5"></div>
+
+    <div class="container">
+        <h1 class="text-center mt-4">About Us</h1>
+
+        <div class="row">
+            <div class="col-md-4 mb-4 mt-5">
+                <a href="{{ path('story_page') }}" class="card-link">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <h1 class="card-title">Our Story</h1>
+                            <p class="card-text">Discover the journey of Creativity Collective, from its humble beginnings to becoming a hub for fashion and self-expression.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-md-4 mb-4 mt-5">
+                <a href="{{ path('mission_page') }}" class="card-link">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <h1 class="card-title">Mission & Vision</h1>
+                            <p class="card-text">Learn about our mission to empower individuals through fashion and our vision for a more inclusive and creative world.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-md-4 mb-4 mt-5">
+                <a href="{{ path('team_page') }}" class="card-link">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <h1 class="card-title">Meet the Team</h1>
+                            <p class="card-text">Get to know the passionate individuals behind Creativity Collective who work tirelessly to bring you the latest and greatest in fashion.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="card-divider mt-5"></div>
+
+    <h1 class="text-center mt-4">Contact</h1>
+
+    <div class="text-center mt-4">
+        <p>Connect with us! Reach out through our contact page to share your thoughts, inquiries, or collaborations. We look forward to hearing from you!</p>
+
+    <div class="text-center mt-4">
+        <a href="{{ path('contact_page') }}" class="btn olive-button">Contact Us</a>
+    </div>
+    </div>
+
+    <div class="card-divider mt-4"></div>
 
 
 

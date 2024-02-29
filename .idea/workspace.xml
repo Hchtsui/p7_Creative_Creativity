@@ -5,12 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f847a8ff-6620-4bd5-8978-0df1fc1bb58a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Controller/guestController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/p7_Creative_Creativity.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/p7_Creative_Creativity.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/guest/bio.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/guest/contact.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/guest/cotton.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/guest/mission.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/guest/story.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/guest/team.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/guest/wool.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/styles/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/GuestController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/GuestController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/guest/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/guest/index.html.twig" afterDir="false" />
     </list>
@@ -159,28 +163,28 @@
       <path value="$PROJECT_DIR$/vendor/doctrine/dbal" />
     </include_path>
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 7
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="2cJMKoDVNCHZN1h1JpY1jADzv5F" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/tsui/p7_Creative_Creativity",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/tsui/p7_Creative_Creativity&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Main" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner configuration_file="$PROJECT_DIR$/phpunit.xml.dist" scope="XML" use_alternative_configuration_file="true" />
@@ -190,7 +194,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-php-predefined-ba97393d7c68-b4dcf6bb9de9-com.jetbrains.php.sharedIndexes-PS-233.13135.108" />
+        <option value="bundled-php-predefined-ba97393d7c68-6f8e3395a2b4-com.jetbrains.php.sharedIndexes-PS-233.14475.35" />
       </set>
     </attachedChunks>
   </component>
@@ -203,6 +207,9 @@
       <option name="presentableId" value="Default" />
       <updated>1707825166707</updated>
       <workItem from="1707825168395" duration="2876000" />
+      <workItem from="1709115290832" duration="606000" />
+      <workItem from="1709116384323" duration="2397000" />
+      <workItem from="1709123759029" duration="9338000" />
     </task>
     <servers />
   </component>
