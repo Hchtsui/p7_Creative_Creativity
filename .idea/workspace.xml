@@ -1,21 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="ANALYZE_INJECTED_CODE" value="false" />
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f847a8ff-6620-4bd5-8978-0df1fc1bb58a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/templates/guest/bio.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/guest/contact.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/guest/cotton.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/guest/mission.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/guest/story.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/guest/team.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/guest/wool.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/styles/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/GuestController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/GuestController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/guest/bio.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/guest/bio.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/guest/contact.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/guest/contact.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/guest/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/guest/index.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -182,9 +179,15 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="Main" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner configuration_file="$PROJECT_DIR$/phpunit.xml.dist" scope="XML" use_alternative_configuration_file="true" />
@@ -209,7 +212,12 @@
       <workItem from="1707825168395" duration="2876000" />
       <workItem from="1709115290832" duration="606000" />
       <workItem from="1709116384323" duration="2397000" />
-      <workItem from="1709123759029" duration="9338000" />
+      <workItem from="1709123759029" duration="9630000" />
+      <workItem from="1709284784842" duration="2061000" />
+      <workItem from="1709289417405" duration="3873000" />
+      <workItem from="1709625660684" duration="938000" />
+      <workItem from="1709626983671" duration="2156000" />
+      <workItem from="1709712870489" duration="1336000" />
     </task>
     <servers />
   </component>

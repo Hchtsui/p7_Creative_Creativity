@@ -1,0 +1,44 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ 'app.title'|trans }}{% endblock %}
+
+{% block body %}
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="text-center">Contact Us</h1>
+            </div>
+        </div>
+    <!-- Wrapper container -->
+    <div class="container py-4">
+
+    <!-- Bootstrap 5 contact form -->
+    <form id="contactForm" class="mx-auto" style="max-width: 500px;">
+        <!-- Name input -->
+        <div class="mb-3 mt-5">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Your Name">
+        </div>
+
+        <!-- Email address input -->
+        <div class="mb-3">
+            <label for="email" class="form-label">Email Address</label>
+            <input type="email" class="form-control" id="email" placeholder="Your Email">
+        </div>
+
+        <!-- Message input -->
+        <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control" id="message" rows="4" placeholder="Your Message"></textarea>
+        </div>
+
+        <!-- Form submit button -->
+        <button type="submit" class="btn btn-primary">Submit</button>
+
+    </form>
+
+
+
+{% endblock %}
+

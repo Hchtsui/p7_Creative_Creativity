@@ -11,22 +11,22 @@
         {% block header %}
             <div class="container-fluid">
                 <div class="row">
-                    <nav class="navbar navbar-expand-lg fixed-top">
+                    <nav class="navbar navbar-expand-lg fixed-top bg-white">
                         <div class="container">
-                            <a class="navbar-brand" href="#">C&C</a>
+                            <a class="navbar-brand" href="{{ path('home_page') }}">C&C</a>
                             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="navbar-toggler-icon"></span>
                             </button>
                             <div class="collapse navbar-collapse" id="navbarNav">
                                 <ul class="navbar-nav mx-auto">
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">Men</a>
+                                        <a class="nav-link" href="{{ path('cotton_page') }}">Cotton</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">Women</a>
+                                        <a class="nav-link" href="{{ path('bio_page') }}">Bio</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">Kids</a>
+                                        <a class="nav-link" href="{{ path('wool_page') }}">Wool</a>
                                     </li>
                                     <!-- Add more menu items as needed -->
                                 </ul>
@@ -58,7 +58,7 @@
     {% block footer %}
         <!-- ... your existing Twig template code ... -->
 
-        <footer class="text-dark py-4">
+        <footer class="text-dark py-4 mt-5">
             <div class="container">
                 <div class="row">
                     <div class="col-md-4">
