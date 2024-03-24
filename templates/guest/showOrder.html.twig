@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div class="row">
+        {% for order in orders %}
+            <div class="col-md-4">
+                <div class="card mt-5">
+                    <div class="card-body">
+                        <h5 class="card-title">Order #{{ order.id }}</h5>
+                        <p class="card-text">Name: {{ order.fname }}</p>
+                        <p class="card-text">Lastname: {{ order.lname }}</p>
+                        <p class="card-text">Streetname: {{ order.streetname }}</p>
+                        <p class="card-text">Streetnumber: {{ order.streetnumber }}</p>
+                        <p class="card-text">Total: {{ order.zipcode }}</p>
+                        <p class="card-text">Total: {{ order.phone }}</p>
+                        <!-- Add more fields as needed -->
+
+                        <!-- Delete button -->
+                        <a href="{{ path('delete_product', {'id': order.id}) }}" class="btn btn-danger">Delete</a>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+
+    </div>
+{% endblock %}

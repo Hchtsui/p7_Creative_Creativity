@@ -3,6 +3,8 @@
 namespace App\Entity;
 
 use App\Repository\CategoriesRepository;
+use Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 
 #[ORM\Entity(repositoryClass: CategoriesRepository::class)]
@@ -19,8 +21,13 @@ class Categories
     #[ORM\Column(length: 255, nullable: true)]
     private ?string $image = null;
 
-    #[ORM\ManyToOne(inversedBy: 'categories_id')]
-    private ?Products $products = null;
+    #[ORM\OneToMany(targetEntity: Products::class, mappedBy: 'category')]
+    private Collection $products;
+
+    public function __construct()
+    {
+        $this->products = new ArrayCollection();
+    }
 
     public function getId(): ?int
     {
@@ -51,14 +58,32 @@ class Categories
         return $this;
     }
 
-    public function getProducts(): ?Products
+    /**
+     * @return Collection<int, Products>
+     */
+    public function getProducts(): Collection
     {
         return $this->products;
     }
 
-    public function setProducts(?Products $products): static
+    public function addProduct(Products $product): static
     {
-        $this->products = $products;
+        if (!$this->products->contains($product)) {
+            $this->products->add($product);
+            $product->setCategory($this);
+        }
+
+        return $this;
+    }
+
+    public function removeProduct(Products $product): static
+    {
+        if ($this->products->removeElement($product)) {
+            // set the owning side to null (unless already changed)
+            if ($product->getCategory() === $this) {
+                $product->setCategory(null);
+            }
+        }
 
         return $this;
     }

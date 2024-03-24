@@ -33,13 +33,10 @@ class Orders
     #[ORM\Column(length: 255)]
     private ?string $phone = null;
 
-    #[ORM\OneToMany(targetEntity: Products::class, mappedBy: 'orders')]
-    private Collection $product_id;
+    #[ORM\ManyToOne(inversedBy: 'orders')]
+    #[ORM\JoinColumn(nullable: false)]
+    private ?Products $product = null;
 
-    public function __construct()
-    {
-        $this->product_id = new ArrayCollection();
-    }
 
     public function getId(): ?int
     {
@@ -118,33 +115,16 @@ class Orders
         return $this;
     }
 
-    /**
-     * @return Collection<int, Products>
-     */
-    public function getProductId(): Collection
+    public function getProduct(): ?Products
     {
-        return $this->product_id;
+        return $this->product;
     }
 
-    public function addProductId(Products $productId): static
+    public function setProduct(?Products $product): static
     {
-        if (!$this->product_id->contains($productId)) {
-            $this->product_id->add($productId);
-            $productId->setOrders($this);
-        }
+        $this->product = $product;
 
         return $this;
     }
 
-    public function removeProductId(Products $productId): static
-    {
-        if ($this->product_id->removeElement($productId)) {
-            // set the owning side to null (unless already changed)
-            if ($productId->getOrders() === $this) {
-                $productId->setOrders(null);
-            }
-        }
-
-        return $this;
-    }
 }

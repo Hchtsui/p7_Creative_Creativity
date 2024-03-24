@@ -27,45 +27,22 @@
         <h1 class="text-center mt-4">Shop By category</h1>
 
         <div class="row">
-            <!-- ... rest of your content ... -->
-            <div class="col-md-4 mb-4 ">
-                <a href="{{ path('cotton_page') }}" class="circular-card">
-                    <div class="image-container">
-                        <img src="{{ asset("img/cotton.webp") }}" alt="Cotton Image" class="img-fluid">
+            {% for category in categories %}
+                <div class="col-md-4 mb-4">
+                    <a href="{{ path('category_page', {id: category.id}) }}" class="circular-card">
+                        <div class="image-container">
+                            <img src="{{ asset('img/' ~ category.image) }}" alt="Cotton Image" class="img-fluid">
+                        </div>
+                    </a>
+                    <div class="card-body text-center">
+                        <h1 class="card-title">{{ category.name }}</h1>
                     </div>
-                </a>
-                <div class="card-body text-center">
-                    <h1 class="card-title">Cotton</h1>
-                    <p class="card-text">Information about cotton material.</p>
                 </div>
-            </div>
+            {% endfor %}
+        </div>
 
-            <div class="col-md-4 mb-4">
-                <a href="{{ path('cotton_page') }}" class="circular-card">
-                    <div class="image-container">
-                        <img src="{{ asset("img/bio.jpeg") }}" alt="Biological Cotton Image" class="img-fluid">
-                    </div>
-                </a>
-                <div class="card-body text-center">
-                    <h1 class="card-title">Biological</h1>
-                    <p class="card-text">Information about biological cotton material.</p>
-                </div>
-            </div>
-
-            <div class="col-md-4 mb-4">
-                <a href="{{ path('wool_page') }}" class="circular-card">
-                    <div class="image-container">
-                        <img src="{{ asset("img/wool.jpeg") }}" alt="Wool Image" class="img-fluid ">
-                    </div>
-                </a>
-                <div class="card-body text-center">
-                    <h1 class="card-title">Wool</h1>
-                    <p class="card-text">Information about wool material.</p>
-                </div>
-            </div>
             <!-- ... rest of your content ... -->
         </div>
-    </div>
 
     <div class="card-divider mt-5"></div>
 
